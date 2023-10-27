@@ -29,7 +29,7 @@ export default function App() {
       },
       body: JSON.stringify({
         "messages": [{ "role": "user", "content": inputMessage }],
-        "model": "gpt-4",
+        "model": "gpt-3.5-turbo",
       })
     }).then((responce) => responce.json()).then((data) => {
       console.log(data.choices[0].message.content)
